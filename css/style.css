@@ -1,0 +1,47 @@
+/*====================
+
+
+Universal Styling
+
+
+=====================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border:0;
+}
+
+/*====================
+
+
+Navigation Bar
+
+=====================*/
+
+header nav {
+    background: #E8E1F2;
+    margin: 40px 0 30px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 8px 100px;
+    font: 20px "chalkboard", fantasy;
+    text-transform: uppercase;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+#logo {
+  padding: 0 10px 0 30px;
+  display: inline-block;
+  height: 100px;
+  vertical-align: middle;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
