@@ -12,6 +12,24 @@ Universal Styling
   border:0;
 }
 
+body {
+  background: #F4F4F4;
+}
+
+main{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+p{
+  font-family: "Raleway", sans-serif;
+}
+
+h1{
+  font: 30px "chalkboard", fantasy;
+  text-transform: uppercase;
+}
+
 /*====================
 
 
@@ -19,14 +37,19 @@ Navigation Bar
 
 =====================*/
 
+header{
+  height: 100px;
+  background: url(../images/header-image.png) top/contain no-repeat;
+  padding: 80px 0 30px;
+}
+
 header nav {
     background: #E8E1F2;
-    margin: 40px 0 30px;
 }
 
 header nav ul li {
     display: inline-block;
-    padding: 8px 100px;
+    padding: 20px 100px;
     font: 20px "chalkboard", fantasy;
     text-transform: uppercase;
 }
@@ -37,11 +60,34 @@ header nav a{
 }
 
 #logo {
-  padding: 0 10px 0 30px;
+  padding: 45px 10px 0 30px;
   display: inline-block;
-  height: 100px;
+  height: 120px;
   vertical-align: middle;
   position: absolute;
   top: 6px;
   left: 5px;
+}
+
+header nav a:hover {
+  color:#A16FFE;
+}
+
+/*====================
+
+
+Home Page Styling
+
+
+=====================*/
+
+.good-life-intro{
+  padding: 100px;
+  text-align: justify;
+}
+
+.column img {
+    width: 31%;
+    float: left;
+    padding: 10px;
 }
