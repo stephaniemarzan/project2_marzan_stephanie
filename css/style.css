@@ -12,11 +12,15 @@ Universal Styling
   border:0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: #F4F4F4;
 }
 
-main{
+.container {
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -27,14 +31,34 @@ p{
 }
 
 h1,
-h2{
-  font: 30px "chalkboard", fantasy;
+h2,
+h3{
+  font: 30px "Architects Daughter", cursive;
   text-transform: uppercase;
   margin: 100px 0 30px;
 }
 
 section{
-  margin: 150px 0;
+  margin: 150px 0 0;
+}
+
+footer {
+  background:#E9E4F1;
+  padding: 60px;
+  text-align: center;
+  width:100%;
+}
+
+footer a {
+  color: black;
+  display: inline-block;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+footer p{
+  text-align: center;
 }
 
 /*====================
@@ -45,9 +69,11 @@ Navigation Bar
 =====================*/
 
 header{
-  height: 100px;
-  background: url(../images/header-image.png) top/cover;
+  background: url(../images/header-image.png) no-repeat fixed;
   padding: 80px 0 30px;
+  min-height: 210px;
+  z-index: 2;
+  width:100%;
 }
 
 header nav {
@@ -57,7 +83,7 @@ header nav {
 header nav ul li {
     display: inline-block;
     padding: 20px 100px;
-    font: 20px "chalkboard", fantasy;
+    font: 20px "Architects Daughter", cursive;
     text-transform: uppercase;
 }
 
@@ -115,20 +141,35 @@ Home Page Styling
 .module-four{
   border: 5px solid #A26FFF;
 }
-.module-five{
+.module-five {
   border: 5px solid #FA86C3;
 }
-.module-six{
+.module-six {
   border: 5px solid #FFA439;
 }
 
 .oats-img {
     float: left;
     max-width: 300px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 50px 0px 0px;
     border: 5px solid #F71968;
 }
 
-.healthy-recipes{
-  display:inline-block;;
+.healthy-recipes {
+  display:inline-block;
+}
+
+.isa {
+  float: left;
+  max-width: 300px;
+  margin: 0px 50px 0px 0px;
+  border: solid 5px #cb8935;
+}
+
+.meet-isa-home{
+  display: inline-block;
+  background: #F4E4CF;
+  margin: 150px 0 0;
+  width: 100%;
+  padding-bottom: 65px;
 }
