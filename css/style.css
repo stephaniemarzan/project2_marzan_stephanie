@@ -353,3 +353,34 @@ Module Page Styling
 .exp-module-six-img{
   border: solid 5px #FFA439;
 }
+
+/*====================
+
+
+Recipe Book Styling
+
+
+=====================*/
+
+
+.poke-bowl-img{
+  float: left;
+  margin: 0px 50px 0px 0px;
+  max-width: 300px;
+  border:solid 5px #F9D108;
+}
+
+.rb-content {
+  display: inline-block;
+  background: #f3d7e5d9;
+  margin: 150px 0 0;
+  width: 100%;
+  padding-bottom: 65px;
+}
+
+.rb-content li{
+    font: 16px "Raleway", sans-serif;
+    text-align: justify;
+    line-height: 1.5em;
+    padding: 15px 0 0;
+}
