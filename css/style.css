@@ -126,6 +126,11 @@ header nav a:hover {
   color:#A16FFE;
 }
 
+.good-life-intro,
+.module-intro{
+  padding: 0px 100px 0px;
+}
+
 /*====================
 
 
@@ -134,17 +139,13 @@ Home Page Styling
 
 =====================*/
 
-.good-life-intro{
-  padding: 0px 100px 0px;
-}
-
-.column img {
+.module-column img {
     width: 30%;
     float: left;
     margin: 10px;
 }
 
-.column img:hover {
+.module-column img:hover {
     transform: scale(1.1);
     transition: .3s;
 }
@@ -198,4 +199,157 @@ Home Page Styling
   margin: 150px 0 0;
   width: 100%;
   padding-bottom: 65px;
+}
+
+
+/*====================
+
+
+Module Page Styling
+
+
+=====================*/
+
+.module-btn a {
+    width: 24%;
+    float: left;
+    margin: 10px 20px;
+}
+
+.first-module-btn,
+.second-module-btn,
+.third-module-btn,
+.fourth-module-btn,
+.fifth-module-btn,
+.sixth-module-btn{
+  text-decoration:none;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  text-align: center;
+  font: 16px "Architects Daughter", cursive;
+}
+
+.first-module-btn{
+  background: #E8F9CF;
+  padding: 15px;
+  border: 8px solid #FED020;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.second-module-btn{
+  background: #E6DEFF;
+  padding: 15px;
+  border: 8px solid #FF5757;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.third-module-btn{
+  background: #E5F9FF;
+  padding: 15px;
+  border: 8px solid #D3A990;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.fourth-module-btn{
+  background: #EFE1C4;
+  padding: 15px;
+  border: 8px solid #FC78C3;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.fifth-module-btn{
+  background: #F9F9CF;
+  padding: 15px;
+  border: 8px solid #A26FFE;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.sixth-module-btn{
+  background: #FFEDF3;
+  padding: 15px;
+  border: 8px solid #FFAA49;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.exp-module-one,
+.exp-module-two,
+.exp-module-three,
+.exp-module-four,
+.exp-module-five,
+.exp-module-six{
+  display: inline-block;
+  margin: 150px 0 0;
+  width: 100%;
+  padding-bottom: 65px;
+}
+
+.exp-module-one{
+  background: #fed02038;
+}
+
+.exp-module-two{
+  background: #ff575745;
+}
+
+.exp-module-three{
+  background: #d096766e;
+}
+
+.exp-module-four{
+  background: #a26fff24;
+}
+
+.exp-module-five{
+  background: #ff66c436;
+}
+
+.exp-module-six{
+  background: #ffa43954;
+}
+
+.exp-module-one-img,
+.exp-module-three-img,
+.exp-module-five-img{
+  float: left;
+  max-width: 300px;
+  margin: 0px 50px 0px 0px;
+}
+
+
+.exp-module-two-img,
+.exp-module-four-img,
+.exp-module-six-img{
+  float: right;
+  max-width: 300px;
+  margin: 0px 0px 0px 50px;
+  }
+
+.exp-module-one-img{
+  border: solid 5px #cb8935;
+}
+
+.exp-module-two-img{
+  border: solid 5px #FF5757;
+}
+
+.exp-module-three-img{
+  border: solid 5px #D09676;
+}
+
+.exp-module-four-img{
+  border: solid 5px #A26FFF;
+}
+
+.exp-module-five-img{
+  border: solid 5px #FF66C4;
+}
+
+.exp-module-six-img{
+  border: solid 5px #FFA439;
 }
