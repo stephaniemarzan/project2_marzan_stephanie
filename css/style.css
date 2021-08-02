@@ -49,6 +49,7 @@ footer {
   padding: 60px;
   text-align: center;
   width:100%;
+  display:inline-block;
 }
 
 footer a {
@@ -127,7 +128,8 @@ header nav a:hover {
 }
 
 .good-life-intro,
-.module-intro{
+.module-intro,
+.rp-intro{
   padding: 0px 100px 0px;
 }
 
@@ -227,54 +229,39 @@ Module Page Styling
   text-transform: uppercase;
   text-align: center;
   font: 16px "Architects Daughter", cursive;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 25px;
 }
 
 .first-module-btn{
   background: #E8F9CF;
-  padding: 15px;
   border: 8px solid #FED020;
-  border-radius: 25px;
-  display: inline-block;
 }
 
 .second-module-btn{
   background: #E6DEFF;
-  padding: 15px;
   border: 8px solid #FF5757;
-  border-radius: 25px;
-  display: inline-block;
 }
 
 .third-module-btn{
   background: #E5F9FF;
-  padding: 15px;
   border: 8px solid #D3A990;
-  border-radius: 25px;
-  display: inline-block;
 }
 
 .fourth-module-btn{
   background: #EFE1C4;
-  padding: 15px;
   border: 8px solid #FC78C3;
-  border-radius: 25px;
-  display: inline-block;
 }
 
 .fifth-module-btn{
   background: #F9F9CF;
-  padding: 15px;
   border: 8px solid #A26FFE;
-  border-radius: 25px;
-  display: inline-block;
 }
 
 .sixth-module-btn{
   background: #FFEDF3;
-  padding: 15px;
   border: 8px solid #FFAA49;
-  border-radius: 25px;
-  display: inline-block;
 }
 
 .exp-module-one,
@@ -383,4 +370,11 @@ Recipe Book Styling
     text-align: justify;
     line-height: 1.5em;
     padding: 15px 0 0;
+}
+
+.recipe-column img{
+    width:30%;
+    float: left;
+    margin: 10px;
+    height:300px;
 }
