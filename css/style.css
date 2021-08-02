@@ -34,7 +34,10 @@ p {
 
 h1,
 h2,
-h3{
+h3,
+h4,
+h5,
+h6{
   font: 30px "Architects Daughter", cursive;
   text-transform: uppercase;
   margin: 100px 0 30px;
@@ -195,6 +198,7 @@ Home Page Styling
   border: solid 5px #cb8935;
 }
 
+.more-about-isa,
 .meet-isa-home{
   display: inline-block;
   background: #F4E4CF;
@@ -377,4 +381,47 @@ Recipe Book Styling
     float: left;
     margin: 10px;
     height:300px;
+}
+
+/*====================
+
+
+About Me Page Styling
+
+
+=====================*/
+
+.isa-hero {
+  position: relative;
+  width: 300px;
+  left: 40%;
+  border: 5px solid #F2E7D6;
+  top: -90px;
+}
+
+.about-intro {
+    margin: 0px;
+}
+
+.about-intro::first-letter{
+  font-size:30px;
+}
+
+.number-one,
+.number-two,
+.number-three,
+.number-four {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  float:left;
+  padding: 0 100px 0 0;
+}
+
+.ff-row-one,
+.ff-row-two,
+.ff-row-three,
+.ff-row-four,
+.ff-row-five {
+    padding: 80px 0;
 }
