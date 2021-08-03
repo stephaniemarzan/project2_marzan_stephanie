@@ -108,10 +108,52 @@
 
       </section>
 
+      <section class="container">
+
+        <h3>Contáctame</h3>
+
+        <p>Si tienes alguna duda o pregunta sobre el programa, no dudes en contactarme.</p>
+
+        <form class="contact-us" id="about_form" name="about_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+
+          <div class="first-name">
+            <label for="firstname" class="label-input">Nombre:</label>
+            <input class="input" type="text" name="firstname" id="firstname" placeholder="ej. Isabella" required/>
+          </div>
+
+          <div class="lastname">
+            <label for="lastname" class="label-input">Apellido:</label>
+            <input class="input" type="text" name="lastname" id="lastname" placeholder="ej. Marzan" required/>
+          </div>
+
+          <div class="email">
+            <label for="email" class="label-input">Correo:</label>
+            <input class="input" type="email" name="email" id="email" placeholder="email@gmail.com" required/>
+          </div>
+
+
+          <div class="telephone">
+            <label for="telephone" class="label-input">Numero de Telefono:</label>
+            <input class="input" type="tel" name="telephone" id="telephone" placeholder="9999-9999"/>
+          </div>
+
+          <div class="message">
+            <label for="message" class="label-input">Mensaje:</label>
+            <textarea class="input" name="message" id="message" rows="8" cols="50" placeholder="Escribe tu mensaje aquí." required></textarea>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Contáctame">
+          </div>
+
+        </form>
+
+      </section>
+
 
     <footer>
 
-      <p>Website by Stephanie Marzan</p>
+      <p>Página web por Stephanie Marzan</p>
 
       <a href="mailto:isabellamarsan@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
 

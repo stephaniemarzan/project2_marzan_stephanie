@@ -30,6 +30,7 @@ p {
   text-align: justify;
   line-height: 1.5em;
   padding: 15px 0 0;
+  color:#1e1e1e;
 }
 
 h1,
@@ -424,4 +425,68 @@ About Me Page Styling
 .ff-row-four,
 .ff-row-five {
     padding: 80px 0;
+}
+
+/*====================
+
+
+Form Styling
+
+
+=====================*/
+
+form body{
+  background: #e7b6ff0f;
+}
+
+.contact-us {
+  background: #E7EBF2;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border: solid 5px #C1CEE2;
+  color: #1e1e1e;
+  font: 16px "Raleway", sans-serif;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.label-input{
+  display: block;
+  padding: 20px 0 10px 0;
+}
+
+.label-input:before{
+  content:url(../images/smiley.png);
+}
+
+.input {
+    padding: 10px;
+    font: 16px "Raleway", sans-serif;
+}
+
+.input:hover{
+  background: #e7b6ff0f;
+}
+
+.submit{
+  padding: 20px 0;
+}
+
+.submit input {
+    font: 16px "Raleway", sans-serif;
+    letter-spacing: 0.8px;
+    background: #6c4573;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+.submit input:hover{
+    background: white;
+    color: #6c4573;
+    border: 3px solid #6c4573;
 }
