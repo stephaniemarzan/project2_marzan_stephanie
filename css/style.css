@@ -398,6 +398,7 @@ About Me Page Styling
   left: 40%;
   border: 5px solid #F2E7D6;
   top: -90px;
+  box-shadow: 12px 12px 2px 1px #E8E1F2;
 }
 
 .about-intro {
