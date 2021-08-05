@@ -32,10 +32,10 @@ a{
 
 p {
   font: 16px "Raleway", sans-serif;
-  text-align: justify;
   line-height: 1.5em;
   padding: 15px 0 0;
   color:#1e1e1e;
+  text-align: center;
 }
 
 </style>
