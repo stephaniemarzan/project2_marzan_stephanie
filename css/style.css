@@ -224,7 +224,7 @@ Home Page Styling
 }
 
 .more-about-isa{
-  display: inline-block;
+  display: flex;
 }
 
 .isa-flex{
@@ -711,6 +711,24 @@ padding:0;
   max-width: 100%;
   display: block;
   margin-bottom: 10%;
+}
+
+/*Recipe Page*/
+
+.isa-hero{
+  left:35%;
+  top: -20px;
+}
+
+.more-about-isa{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.isa-about{
+  max-width: 100%;
+  margin-bottom: 10%;
+  margin-top: 0;
 }
 
 }
