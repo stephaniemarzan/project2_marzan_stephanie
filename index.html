@@ -2,6 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Good Life</title>
 
    <!-- favicon -->
@@ -32,21 +33,18 @@
 
       gtag('config', 'G-T9HLVG8Q04');
     </script>
-    
+
   </head>
   <body>
 
     <header>
 
-      <nav>
+      <nav class="navbar">
         <ul>
-          <li>
-            <a href="index.html">
-            <img src="images/good-life-logo.png" alt="The Good Life Logo" title="The Good Life" id="logo"></a>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="modules.html">Modules</a></li>
-          <li><a href="recipe-book.html">Recipe Book</a></li>
+          <li><a href="index.html"><img src="images/good-life-logo.png" alt="The Good Life Logo" title="The Good Life" id="logo"></a></li>
+          <li><a href="index.html" class="home">Home</a></li>
+          <li><a href="modules.html" >Modules</a></li>
+          <li><a href="recipe-book.html" class="recipe-book">Recipe Book</a></li>
           <li><a href="about.html">About Me</a></li>
         </ul>
       </nav>
@@ -66,7 +64,8 @@
       <section>
         <h1>Modules</h1>
 
-        <div class="module-row-one">
+        <div class="module-grid">
+        <div class="module-row">
           <div class="module-column">
             <img class="module-one" src="images/modules/module-one.png" alt="Module One" title="Module One">
           </div>
@@ -78,7 +77,7 @@
           </div>
         </div>
 
-        <div class="module-row-two">
+        <div class="module-row">
           <div class="module-column">
             <img class="module-four" src="images/modules/module-four.png" alt="Module Four" title="Module Four">
           </div>
@@ -89,32 +88,39 @@
             <img class="module-six" src="images/modules/module-six.png" alt="Module Six" title="Module Six">
           </div>
         </div>
+      </div>
 
       </section>
 
         <section class="healthy-recipes">
 
+        <div class="healthy-recipes-flex">
           <img class="oats-img" src="images/recipe-book/baked-oats.png" alt="Baked Oats" title="Baked Oats">
 
-          <h2 class="recipe-heading">Recetas Saludables</h2>
+            <div class="healthy-recipe-info">
+              <h2 class="recipe-heading">Recetas Saludables</h2>
 
-          <p>Comer saludable no significa que tu comida tiene que ser aburrida o fea! Puedes comer saludable, llegar a tu meta y comer rico. Todo esta en que aprendas como hacerlo. El proposito de el programa "The Good Life" es que aprendas a hacerlos sin necesidad de una dieta restringida o estructura. Adicionalmente, el recetario te dara ideas de comidas faciles, nutritivas y deliciosas que puedes comer para llegar a tus metas.</p>
+              <p>Comer saludable no significa que tu comida tiene que ser aburrida o fea! Puedes comer saludable, llegar a tu meta y comer rico. Todo esta en que aprendas como hacerlo. El proposito de el programa "The Good Life" es que aprendas a hacerlos sin necesidad de una dieta restringida o estructura. Adicionalmente, el recetario te dara ideas de comidas faciles, nutritivas y deliciosas que puedes comer para llegar a tus metas.</p>
 
-          <a href="recipe-book.html" class="btn">Conoce mas sobre nuestro recetario aquí</a>
-
+              <a href="recipe-book.html" class="btn">Conoce mas sobre nuestro recetario aquí</a>
+            </div>
+        </div>
         </section>
       </div>
 
       <section class="meet-isa-home">
         <div class="container">
-          <img class="isa" src="images/meet-isa/meet-isabella.png" alt="Isabella Marzan" title="Isabella Marzan">
+          <div class="isa-flex">
+            <img class="isa" src="images/meet-isa/meet-isabella.png" alt="Isabella Marzan" title="Isabella Marzan">
 
-          <h3>Conoce a Isabella</h3>
+            <div class="isa-info">
+            <h3>Conoce a Isabella</h3>
 
-          <p>Mi nombre es Isabella Marzán, soy licenciada en Nutrición y Dietética, foodie autoproclamada y amante del café. Nací y crecí en San Pedro Sula, Honduras y complete mis estudios en Mayo 2020 de Texas Christian University.</p>
-          <p>Comencé mis estudios universitarios estudiando Medicina en UCIMED y luego decidí cambiarme de carrera a Nutrición y Dietética en Texas donde me termine enamorando de mi carrera y de un estilo de vida saludable.</p>
-          <a class="btn" href="about.html">Aprende mas sobre mi aquí</a>
-
+            <p>Mi nombre es Isabella Marzán, soy licenciada en Nutrición y Dietética, foodie autoproclamada y amante del café. Nací y crecí en San Pedro Sula, Honduras y complete mis estudios en Mayo 2020 de Texas Christian University.</p>
+            <p>Comencé mis estudios universitarios estudiando Medicina en UCIMED y luego decidí cambiarme de carrera a Nutrición y Dietética en Texas donde me termine enamorando de mi carrera y de un estilo de vida saludable.</p>
+            <a class="btn" href="about.html">Aprende mas sobre mi aquí</a>
+            </div>
+          </div>
         </div>
 
       </section>
