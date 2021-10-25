@@ -2,6 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Good Life - Recipe Book</title>
 
     <!-- lightbox CSS -->
@@ -27,25 +28,25 @@
         <script src="https://kit.fontawesome.com/460eab7b7d.js" crossorigin="anonymous"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9HLVG8Q04"></script>
-        <script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9HLVG8Q04"></script>
+          <script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
               gtag('config', 'G-T9HLVG8Q04');
-        </script>
+          </script>
+
 
   </head>
   <body>
 
     <header>
 
-      <nav>
+      <nav class="navbar">
         <ul>
           <li>
-            <a href="index.html">
-            <img src="images/good-life-logo.png" alt="The Good Life Logo" title="The Good Life" id="logo"/></a>
+            <a href="index.html"><img src="images/good-life-logo.png" alt="The Good Life Logo" title="The Good Life" id="logo"/></a>
           </li>
           <li><a href="index.html">Home</a></li>
           <li><a href="modules.html">Modules</a></li>
@@ -65,52 +66,90 @@
         </section>
       </div>
 
-        <section class="rb-content">
-          <div class="container">
-            <img class="poke-bowl-img" src="images/recipe-book/poke-bowl.png" alt="Poke Bowl" title="Poke Bowl">
+      <article class="rb-content">
+        <div class="container">
+          <div class="recipe-flex">
+              <img class="poke-bowl-img" src="images/recipe-book/poke-bowl.png" alt="Poke Bowl" title="Poke Bowl">
 
-            <h1>Lo que contiene:</h1>
+            <div class="rb-info-container">
+              <h1>Lo que contiene:</h1>
 
-            <ul>
-              <li>15 recetas de desayunos para comenzar tu día</li>
-              <li>20 almuerzos/cenas para recargar tus energias</li>
-              <li>5 recetas de meriendas</li>
-              <li>5 postresitos para endulzarles la vida</li>
-              <li>5 recetas de "mocktails" o tragos "skinny"</li>
-            </ul>
-
+              <ul>
+                <li>15 recetas de desayunos para comenzar tu día</li>
+                <li>20 almuerzos/cenas para recargar tus energias</li>
+                <li>5 recetas de meriendas</li>
+                <li>5 postresitos para endulzarles la vida</li>
+                <li>5 recetas de "mocktails" o tragos "skinny"</li>
+              </ul>
+            </div>
           </div>
-        </section>
+        </div>
+
+      </article>
 
         <section class="recipes-included">
           <div class="container">
             <h2>Algunas de las recetas incluidas:</h2>
 
-            <div class="recipe-row-one">
+            <div class="recipe-row">
               <div class="recipe-column">
-                <a href="images/recipe-book/pancakes.jpeg" data-lightbox="recipe-gallery" data-title="Pancakes"><img class="recipe-one" src="images/recipe-book/pancakes.jpeg" alt="Pancakes" title="Pancakes"></a>
+                <figure>
+                  <a href="images/recipe-book/pancakes.jpeg" data-lightbox="recipe-gallery" data-title="Pancakes"><img class="recipe-one" src="images/recipe-book/pancakes.jpeg" alt="Pancakes" title="Pancakes"></a>
+                  <figcaption>
+                  <p>Pancakes</p>
+                  </figcaption>
+                </figure>
               </div>
               <div class="recipe-column">
-                <a href="images/recipe-book/farro-salad.png" data-lightbox="recipe-gallery" data-title="Farro Salad"><img class="recipe-two" src="images/recipe-book/farro-salad.png" alt="Farro Salad" title="Farro Salad"></a>
+                <figure>
+                  <a href="images/recipe-book/farro-salad.png" data-lightbox="recipe-gallery" data-title="Farro Salad"><img class="recipe-two" src="images/recipe-book/farro-salad.png" alt="Farro Salad" title="Farro Salad"></a>
+                  <figcaption>
+                    <p>Farro Salad</p>
+                  </figcaption>
+                </figure>
               </div>
               <div class="recipe-column">
-                <a href="images/recipe-book/fish-tostadas.jpeg" data-lightbox="recipe-gallery" data-title="Fish Tostadas"><img class="recipe-three" src="images/recipe-book/fish-tostadas.jpeg" alt="Fish Tostadas" title="Fish Tostadas"></a>
+                <figure>
+                  <a href="images/recipe-book/fish-tostadas.jpeg" data-lightbox="recipe-gallery" data-title="Fish Tostadas"><img class="recipe-three" src="images/recipe-book/fish-tostadas.jpeg" alt="Fish Tostadas" title="Fish Tostadas"></a>
+                  <figcaption>
+                    <p>Fish tostadas</p>
+                  </figcaption>
+                </figure>
               </div>
             </div>
 
-            <div class="recipe-row-two">
+            <div class="recipe-row">
               <div class="recipe-column">
+                <figure>
                   <a href="images/recipe-book/cookies.png" data-lightbox="recipe-gallery" data-title="Cookies"><img class="recipe-four" src="images/recipe-book/cookies.png" alt="Cookies" title="Cookies"></a>
+                  <figcaption>
+                    <p>Oatmeal Cookies</p>
+                  </figcaption>
+                </figure>
               </div>
               <div class="recipe-column">
+                <figure>
                   <a href="images/recipe-book/baked-oats.png" data-lightbox="recipe-gallery" data-title="Baked Oats"><img class="recipe-five" src="images/recipe-book/baked-oats.png" alt="Baked Oats" title="Baked Oats"></a>
+                  <figcaption>
+                    <p>Baked Oats</p>
+                  </figcaption>
+                </figure>
               </div>
               <div class="recipe-column">
-              <a href="images/recipe-book/cheesecake-bites.jpeg" data-lightbox="recipe-gallery" data-title="Cheesecake Bites"><img class="recipe-six" src="images/recipe-book/cheesecake-bites.jpeg" alt="Cheesecake Bites" title="Cheesecake Bites"></a>
+                <figure>
+                  <a href="images/recipe-book/cheesecake-bites.jpeg" data-lightbox="recipe-gallery" data-title="Cheesecake Bites"><img class="recipe-six" src="images/recipe-book/cheesecake-bites.jpeg" alt="Cheesecake Bites" title="Cheesecake Bites"></a>
+                  <figcaption>
+                    <p>Cheesecake Bites</p>
+                  </figcaption>
+                </figure>
               </div>
             </div>
 
           </div>
+
+          <aside>
+            <p>Visita mi Instagram,<a href="mailto:isabellamarsan@gmail.com" target="_blank"> @wholebyisa</a>, para mas recetas. O <a href="mailto:isabellamarsan@gmail.com" target="_blank">enviame un correo</a> para adquirir mi recetario.</p>
+          </aside>
 
         </section>
     </main>
