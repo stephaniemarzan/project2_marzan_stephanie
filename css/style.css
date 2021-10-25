@@ -702,10 +702,15 @@ padding:0;
 }
 
 .exp-module-one-img,
-.exp-module-two-img{
+.exp-module-two-img,
+.exp-module-three-img,
+.exp-module-four-img,
+.exp-module-five-img,
+.exp-module-six-img{
   margin: 0 auto;
   max-width: 100%;
   display: block;
+  margin-bottom: 10%;
 }
 
 }
