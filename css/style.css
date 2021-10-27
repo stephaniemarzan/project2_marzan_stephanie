@@ -42,8 +42,8 @@ h5,
 h6{
   font: 2.2em "Architects Daughter", cursive;
   text-transform: uppercase;
-  margin: 100px 0 30px;
   text-align: center;
+  margin: 30px 0;
 }
 
 section{
@@ -175,11 +175,12 @@ Home Page Styling
   padding: 0 1%;
 }
 
-.module-column{
-  flex:30%;
-  max-width: 30%;
-  padding: 0 1%;
+.recipe-column,
+.module-column {
+  flex: 100%;
+  max-width: 100%;
 }
+
 .module-column img{
   margin-top: 3%;
   vertical-align: middle;
@@ -212,7 +213,13 @@ Home Page Styling
 
 .healthy-recipes-flex{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.healthy-recipes-flex img{
+  max-width:100%;
+  margin: 0 auto;
+  margin-top: 10%;
 }
 
 .healthy-recipe-info{
@@ -221,7 +228,6 @@ Home Page Styling
 }
 
 .oats-img{
-  max-width:40%;
   object-fit: cover;
   margin: 0px 50px 0px 0px;
   border: 5px solid #F71968;
@@ -240,10 +246,12 @@ Home Page Styling
 
 .more-about-isa{
   display: flex;
+  flex-direction: column;
 }
 
 .isa-flex{
   display: flex;
+  flex-direction: column;
 }
 
 .isa-info{
@@ -251,13 +259,17 @@ Home Page Styling
   flex-wrap: wrap;
 }
 
-.isa{
-  max-width:40%;
-  object-fit: cover;
-  margin: 50px 50px 0px 0px;
-  border: solid 5px #cb8935;
+.isa-info h3{
+  margin: 30px 0 30px;
 }
 
+.isa-flex img{
+  max-width:100%;
+  margin: 0 auto;
+  margin-top: 10%;
+  object-fit: cover;
+  border: solid 5px #cb8935;
+}
 
 /*====================
 
@@ -266,7 +278,7 @@ Module Page Styling
 
 
 =====================*/
- 
+
 .module-btn a{
   padding: 2%;
   margin-bottom: 10%;
@@ -431,17 +443,29 @@ Recipe Book Styling
 
 .recipe-flex{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .recipe-flex img{
-  width: 47%;
-  height: auto;
-  margin: 50px 50px 0px 0px;
+  width:90%;
   border:solid 5px #F9D108;
   object-fit: cover;
+  margin-top: 10%;
 }
 
+.rb-info-container li{
+  font: 1.1em "Raleway", sans-serif;
+  text-align: justify;
+  line-height: 1.5em;
+  padding: 3% 0 0;
+  color:#1e1e1e;
+}
+
+.rb-info-container h1{
+  margin: 30px 0;
+}
+
+.recipe-flex
 .rb-content li{
     font: 1.1em "Raleway", sans-serif;
     text-align: justify;
@@ -456,19 +480,12 @@ Recipe Book Styling
 .recipe-row{
   display: flex;
   flex-wrap: wrap;
-}
-
-.recipe-column{
-  flex:31%;
-  max-width: 31%;
-  padding: 1%;
+  flex-direction: column;
 }
 
 .recipe-column img{
-  margin-top: 1%;
-  vertical-align: middle;
+  margin-top: 5%;
   width:100%;
-  height:99%;
 }
 
 aside p{
@@ -493,10 +510,10 @@ About Me Page Styling
 .isa-hero {
   position: relative;
   width: 300px;
-  left: 40%;
   border: 5px solid #F2E7D6;
-  top: -90px;
   box-shadow: 12px 12px 2px 1px #E8E1F2;
+  left:35%;
+  top: -20px;
 }
 
 .about-intro {
@@ -516,11 +533,11 @@ About Me Page Styling
 }
 
 .isa-about{
-  float: left;
-  max-width:40%;
+  max-width: 100%;
   object-fit: cover;
-  margin: 50px 50px 0px 0px;
+  margin-bottom: 10%;
   border: solid 5px #cb8935;
+  margin-top: 10%;
 }
 
 .number-one,
@@ -631,54 +648,6 @@ Media Queries
 
 =====================*/
 
-@media screen and (max-width: 1000px) {
-
-  .recipe-column,
-  .module-column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-  .isa-flex,
-  .healthy-recipes-flex,
-  .recipe-flex{
-  flex-direction: column;
-}
-  .recipe-flex img{
-  width:90%;
-}
-
-
-.isa-flex img,
-.healthy-recipes-flex img{
-  max-width:100%;
-  margin: 0 auto;
-  margin-top: 10%;
-}
-
-}
-
-@media all and (max-width: 1000px) {
-
-/*Recipe Page*/
-
-.isa-hero{
-  left:35%;
-  top: -20px;
-}
-
-.more-about-isa{
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.isa-about{
-  max-width: 100%;
-  margin-bottom: 10%;
-  margin-top: 0;
-}
-
-}
 
 @media all and (min-width: 1001px) {
 
@@ -691,6 +660,7 @@ Media Queries
   h5,
   h6{
   text-align: left;
+  margin: 100px 0 30px;
 }
 
 .btn{
@@ -784,7 +754,10 @@ nav ul li {
 .exp-module-three h2,
 .exp-module-four h2,
 .exp-module-five h2,
-.exp-module-six h2{
+.exp-module-six h2,
+.isa-info h3,
+.rb-info-container h1,
+.more-about-isa h1{
   margin: 100px 0 30px;
   }
 
@@ -805,4 +778,82 @@ nav ul li {
   #mod-six p{
     padding-bottom: 0;
   }
+
+/* Home Page */
+
+.module-column{
+  flex:30%;
+  max-width: 30%;
+  padding: 0 1%;
+}
+
+.healthy-recipes-flex{
+  display:flex;
+  flex-direction: row;
+}
+
+.healthy-recipes-flex img{
+  max-width:40%;
+  margin: 50px 50px 0px 0px;
+}
+
+.isa-flex img{
+  max-width:40%;
+  object-fit: cover;
+  margin: 50px 50px 0px 0px;
+  border: solid 5px #cb8935;
+}
+
+.isa-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Recipe Book Page */
+
+.recipe-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.recipe-flex img{
+  width: 47%;
+  height: auto;
+  margin: 50px 50px 0px 0px;
+}
+
+.recipe-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.recipe-column{
+  flex:31%;
+  max-width: 31%;
+  padding: 1%;
+}
+
+.recipe-column img{
+  margin-top: 1%;
+  vertical-align: middle;
+  width:100%;
+  height:99%;
+}
+
+/* About Page*/
+
+.isa-hero{
+  left: 40%;
+  top: -90px;
+}
+
+.more-about-isa{
+  flex-direction:row;
+}
+
+.isa-about{
+  float: left;
+  max-width:40%;
+  margin: 50px 50px 0px 0px;
+}
 }
