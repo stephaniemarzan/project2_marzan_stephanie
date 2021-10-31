@@ -39,13 +39,17 @@
 
     <header>
 
-      <nav class="navbar">
+      <nav class="navbar" id="myTopnav">
         <ul>
-          <li><a href="index.html"><img src="images/good-life-logo.png" alt="The Good Life Logo" title="The Good Life" id="logo"></a></li>
-          <li><a href="index.html" class="home">Home</a></li>
-          <li><a href="modules.html" >Modules</a></li>
-          <li><a href="recipe-book.html" class="recipe-book">Recipe Book</a></li>
+          <li>
+            <a href="index.html">
+            <img src="images/good-life-logo.png" alt="The Good Life Logo" title="The Good Life" id="logo"/></a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="modules.html">Modules</a></li>
+          <li><a href="recipe-book.html">Recipe Book</a></li>
           <li><a href="about.html">About Me</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </ul>
       </nav>
 
@@ -162,6 +166,18 @@
         $(document).ready(function() {
         $("html, body").pagefade(1000, 1000);
         });
+    </script>
+
+    <!-- Script for hamburguer menu --->
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
     </script>
 
   </body>
