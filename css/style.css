@@ -89,6 +89,11 @@ footer p{
   border: 8px solid #C1CEE2;
 }
 
+#logo{
+  max-width: 15%;
+  padding: 20px 20px 0;
+}
+
 /*====================
 
 
@@ -160,10 +165,6 @@ header nav a{
 .module-intro,
 .rp-intro{
   padding: 0px 10% 0px;
-}
-
-#logo{
-display: none;
 }
 
 /*====================
@@ -859,16 +860,16 @@ Media Queries
   }
 
   #logo{
-    max-width:30%;
-    margin-left: 5%;
+    max-width: 15%;
     display: block;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 
   nav ul{
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 0;
   }
 
   nav ul li {
@@ -880,7 +881,7 @@ Media Queries
   }
 
   .navbar{
-    padding: 0;
+    padding: 0 100px;
   }
 
   .navbar .icon {
@@ -890,5 +891,6 @@ Media Queries
   .navbar li a {
       display: block;
       float:left;
+      padding: 20px 60px;
   }
 }
